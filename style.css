@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #eaf1ff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 250px;
+  height: 180px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  mix-blend-mode: multiply;
+
+}
+
+.search-box{
+border: 2px solid rgb(183, 207, 218);
+height: 50px;
+margin: 50px;
+border-radius:25px;
+  mix-blend-mode: multiply;}
+
+.search-box input {
+  padding:15px;
+  width:25rem;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  border: transparent;
+  margin-bottom:10px;
+}
+
+.search-box::before {
+  content: "🔍";
+  margin: 12px;
+    filter: grayscale(100%);
+    
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.tags button {
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.right {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-box input {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.forgot {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-align: right;
+  text-decoration: none;
+}
+
+.login-btn {
+  background: linear-gradient(to right, #9b4dff, #ff5ac8);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.or {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-login button {
+  flex: 1;
+  padding: 10px;
+  margin: 0 4px;
+  font-size: 0.95rem;
+  border: 1px solid #eaeff2;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgb(144, 175, 190);
+  cursor: pointer;
+
+  filter: grayscale(0%);
+}
+.social-login button:hover{
+  filter: grayscale(100%);
+}
+ .social-login .glogo{
+  width: 22px;
+  height: 16px;
+   background-color: transparent;
+  mix-blend-mode: multiply;
+  justify-content:center;
+ }
+.create-btn {
+  background: linear-gradient(to right, #9b4dff, #ff5ac8);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
